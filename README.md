@@ -2,12 +2,12 @@
 
 ## Versions
 
-Alpine : `3.6`   
-ElasticSearch : `6.0.0`   
+Alpine : `3.7`   
+ElasticSearch : `6.1.0`   
 
 ## Commands
 
-Build : `docker build -t perriea/alpine-elasticsearch .`   
-Pull : `docker pull perriea/alpine-elasticsearch`   
+Build : `docker build -t perriea/alpine-elasticsearch:3.7 .`   
+Pull : `docker pull perriea/alpine-elasticsearch:3.7`   
 
-Run : `docker run -d -p 9200:9200 -p 9300:9300 perriea/alpine-elasticsearch`
+Run : `docker run -d -p 9200:9200 -p 9300:9300 perriea/alpine-elasticsearch:3.7`
