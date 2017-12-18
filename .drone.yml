@@ -11,6 +11,18 @@ pipeline:
       branch: master
       event: 
         - push
+  
+  publish_dev_alpine:
+    image: plugins/docker
+    repo: perriea/alpine-elasticsearch
+    dockerfile: Dockerfile
+    secrets: [ docker_username, docker_password ]
+    tag:
+      - dev
+    when:
+      branch: dev-alpine3.7
+      event: 
+        - push
 
   slack:
     image: plugins/slack
